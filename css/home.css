@@ -1,0 +1,33 @@
+@font-face {
+    font-family: DGF;
+    src: url(../Fuentes/DragonBallFighterz-Regular.ttf);
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    background-image: url(../imagenes/titulos/fondohome.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.start{
+    position: absolute;
+    font-family: dgf;
+    background-color: #7d190b;
+    height: 198px;
+    width: 658px;
+    font-size: 10em;
+    text-align:center;
+    margin: 21em;
+    border: 32px dashed white;
+    border-radius: 37px;
+}
+.start a{
+    text-decoration: none;
+    color: black;
+}
