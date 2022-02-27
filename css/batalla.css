@@ -1,3 +1,7 @@
+@font-face {
+    font-family: DGF;
+    src: url(../Fuentes/DragonBallFighterz-Regular.ttf);
+}
 body {
      margin: 0px;
       padding: 0px;
@@ -26,10 +30,11 @@ body {
 .personajes { height: 140rem;
      width: 59rem;
 }
-.jugador1 { display: flex;
-     flex-direction: column;
-      align-items: center;
-       justify-content: space-between;
+.jugador1 { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 .vs{
     display: flex;
@@ -44,10 +49,31 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-span { 
-    font-size: 7em;
-    color: black;
+span {
+    font-family: dgf;
+    font-size: 20rem;
+    color: #000000d9;
     position: absolute;
-    margin-top: 5em;
-    margin-right: 4em;
+    margin-top: 1.5em;
+    margin-right: 2em;
 }
+.botonera {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2em;
+    width: 30rem;
+    height: 14rem;
+    
+}
+
+.botonera button{
+height: 15rem;
+width: 15rem;
+border: double 26px rgb(241, 239, 239);
+background-color: rgb(97, 20, 20);
+border-radius: 50%;
+color: black;
+font-size: 15rem;
+font-family: dgf;
+}
+.personajeYboton{display: flex;flex-direction: row;}
