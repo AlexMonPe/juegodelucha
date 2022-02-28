@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/seleccionpj.css">
     <link rel="stylesheet" href="./css/batalla.css">
-    <title>Selección de Personaje</title>
+    <link rel="stylesheet" href="./css/ganador.css">
+    <title>Juego de Lucha</title>
 </head>
 <body>
         <div class="contenedor-seleccion">
@@ -15,10 +16,10 @@
             </div>
             <div class="parteCentral">
                 <div class="seleccionPj">
-                    <img class="bannerPj" onclick="asignarpj('celula')" src="./imagenes/seleccionpj/cell.png" alt="cell">
-                    <img class="bannerPj" onclick="asignarpj('gohan')" src="./imagenes/seleccionpj/gohan.png" alt="gohan">
-                    <img class="bannerPj" onclick="asignarpj('zamasu')" src="./imagenes/seleccionpj/ZamasuRose.png" alt="zamasu">
-                    <img class="bannerPj" onclick="asignarpj('vegito')" src="./imagenes/seleccionpj/VegitoBlue.png" alt="vegito">
+                    <img class="bannerPj" onclick="seleccionPersonajes('celula')" src="./imagenes/seleccionpj/cell.png" alt="cell">
+                    <img class="bannerPj" onclick="seleccionPersonajes('gohan')" src="./imagenes/seleccionpj/gohan.png" alt="gohan">
+                    <img class="bannerPj" onclick="seleccionPersonajes('zamasu')" src="./imagenes/seleccionpj/ZamasuRose.png" alt="zamasu">
+                    <img class="bannerPj" onclick="seleccionPersonajes('vegito')" src="./imagenes/seleccionpj/VegitoBlue.png" alt="vegito">
                     <img class="selPj" src="./imagenes/seleccionpj/CS_Title.png" alt="selPj">
                 </div>
             </div>
@@ -27,7 +28,7 @@
             </div>
         </div>        
     
-<!--------------------------- PANTALLA DE BATALLA ----------- -->
+<!--------------------------- PANTALLA DE BATALLA --------------->
 
     <div class="contenedor-batalla">
         <div class="jugador1">
@@ -57,6 +58,15 @@
             
            
         </div>
+    </div>
+
+<!------------------------PANTALLA GANADOR ---------------------->
+<div class="contenedor-ganador">
+    <div class="hasganado">
+        <img src="./imagenes/titulos/TN_Winner.png" alt="hasganado">
+    </div>
+</div>
+
 <script src="./js/global.js"></script>
 </body>
 </html>

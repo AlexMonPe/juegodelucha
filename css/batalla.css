@@ -9,20 +9,20 @@ body {
 .fondo { 
   
 }
-.contenedor-batalla { 
+.contenedor-batalla {
     background-image: url("../imagenes/seleccionpj/fondobatalla.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex; 
+    display: none;
     height: 100vh;
-    width: 100vw; 
+    width: 100vw;
     flex-direction: row;
-    justify-content: space-around;
     align-items: flex-end;
+    justify-content: space-evenly;
 }
 .marcadorVida {
-    height: 19rem;
-    width: 36rem;
+    height: 12rem;
+    width: 30rem;
 }
 .personajes {
      height: 44rem;
@@ -52,7 +52,7 @@ span {
     font-size: 6rem;
     color: #000000d9;
     position: absolute;
-    margin-top: 1.5em;
+    margin-top: 1em;
     margin-right: 2em;
 }
 .botonera {
