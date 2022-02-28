@@ -2,27 +2,19 @@ body{
     margin: 0;
     padding: 0;
 }
-.fondo{
+
+.contenedor-seleccion {
+    display: none;
+    justify-content: space-between;
     background-image: url(../imagenes/seleccionpj/fondoshenron.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
-    
-}
-.container {
-    display: flex;
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    top: 0%;
-    justify-content: space-between;
 }
 
 .selPj {
-    height: 54rem;
-    width: 152rem;
-    margin-top: 23em;
+    width: 37rem;
 }
 .seleccionPj {
     display: flex;
@@ -31,11 +23,16 @@ body{
     align-items: center;
     justify-content: center;
 }
+.seleccionpj button{
+    
+}
 .bannerPj {
-    height: 24rem;
-    width: 145rem;
+    height: 7rem;
+    width: 43rem;
     margin: 30px 0px;
 }
-.bannjerPj:hover {
-    background-color: brown;
+
+.numeroJugador img{
+
+width: 9em;
 }

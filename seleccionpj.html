@@ -5,28 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/seleccionpj.css">
+    <link rel="stylesheet" href="./css/batalla.css">
     <title>Selección de Personaje</title>
 </head>
 <body>
-    <div class="fondo"> 
-    </div>
-    <div class="container">
+        <div class="contenedor-seleccion">
+            <div class="jugador1 numeroJugador">
+                <img src="./imagenes/seleccionpj/player1.png" alt="player1">
+            </div>
+            <div class="parteCentral">
+                <div class="seleccionPj">
+                    <img class="bannerPj" onclick="asignarpj('celula')" src="./imagenes/seleccionpj/cell.png" alt="cell">
+                    <img class="bannerPj" onclick="asignarpj('gohan')" src="./imagenes/seleccionpj/gohan.png" alt="gohan">
+                    <img class="bannerPj" onclick="asignarpj('zamasu')" src="./imagenes/seleccionpj/ZamasuRose.png" alt="zamasu">
+                    <img class="bannerPj" onclick="asignarpj('vegito')" src="./imagenes/seleccionpj/VegitoBlue.png" alt="vegito">
+                    <img class="selPj" src="./imagenes/seleccionpj/CS_Title.png" alt="selPj">
+                </div>
+            </div>
+            <div class="jugador2 numeroJugador">
+                <img src="./imagenes/seleccionpj/player2.png" alt="player1">
+            </div>
+        </div>        
+    
+<!--------------------------- PANTALLA DE BATALLA ----------- -->
+
+    <div class="contenedor-batalla">
         <div class="jugador1">
-            <img src="./imagenes/seleccionpj/player1.png" alt="player1">
-        </div>
-        <div class="parteCentral">
-            <div class="seleccionPj">
-                <img class="bannerPj" src="./imagenes/seleccionpj/cell.png" alt="cell">
-                <img class="bannerPj" src="./imagenes/seleccionpj/gohan.png" alt="gohan">
-                <img class="bannerPj" src="./imagenes/seleccionpj/ZamasuRose.png" alt="zamasu">
-                <img class="bannerPj" src="./imagenes/seleccionpj/VegitoBlue.png" alt="Vegito">
-                <img class="selPj" src="./imagenes/seleccionpj/CS_Title.png" alt="selPj">
+            <span id="vida-1">VIDA:</span>
+            <img class="marcadorVida" src="./imagenes/batalla/vida1.png" alt="vida1">
+            <div class="personajeYboton">
+                <img class="personajes" src="./imagenes/personajes/CS_CharacterImage_GBR.png" alt="personaje1">
+                <div class="botonera">
+                    <div><button class="boton-A">A</button></div>
+                    <div><button class="boton-B">B</button></div>
+                </div>
             </div>
         </div>
+        <div class="vs">
+            <img src="./imagenes/titulos/vs_object_05.png" alt="">
+        </div>
         <div class="jugador2">
-            <img src="./imagenes/seleccionpj/player2.png" alt="player1">
-        </div>        
-    </div>
-    <script src="./js/global.js"></script>
+            <span id="vida-2">VIDA:</span>
+            <img class="marcadorVida" src="./imagenes/batalla/vida2.png" alt="vida2">
+            <div class="personajeYboton">
+                <img class="personajes" src="./imagenes/personajes/CS_CharacterImage_VTB.png" alt="personaje2">
+                <div class="botonera">
+                    <div><button class="boton-A">A</button></div>
+                    <div><button class="boton-B">B</button></div>
+                </div>
+            </div>
+            
+           
+        </div>
+<script src="./js/global.js"></script>
 </body>
 </html>

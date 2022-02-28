@@ -7,28 +7,26 @@ body {
       padding: 0px;
      }
 .fondo { 
-    background-image: url("../imagenes/seleccionpj/fondobatalla.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+  
 }
-.container { 
-    display: flex;
-    position: absolute; 
-    height: 100vh; width: 100vw;
-    top: 0%; 
+.contenedor-batalla { 
+    background-image: url("../imagenes/seleccionpj/fondobatalla.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex; 
+    height: 100vh;
+    width: 100vw; 
     flex-direction: row;
     justify-content: space-around;
+    align-items: flex-end;
 }
-.marcadorVida { 
-    height: 61rem;
-     width: 115rem;
+.marcadorVida {
+    height: 19rem;
+    width: 36rem;
 }
-.personajes { height: 140rem;
-     width: 59rem;
+.personajes {
+     height: 44rem;
+     width: 18rem;
 }
 .jugador1 { 
     display: flex;
@@ -39,11 +37,11 @@ body {
 .vs{
     display: flex;
     height: 100%;
-    width: 63rem;
+    width: 18rem;
     flex-direction: column;
     justify-content: center;
 }
-.jugador2 { 
+.jugador2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -51,7 +49,7 @@ body {
 }
 span {
     font-family: dgf;
-    font-size: 20rem;
+    font-size: 6rem;
     color: #000000d9;
     position: absolute;
     margin-top: 1.5em;
@@ -60,20 +58,9 @@ span {
 .botonera {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 2em;
-    width: 30rem;
-    height: 14rem;
-    
+    width: 11rem;
+    height: 7rem;
 }
 
-.botonera button{
-height: 15rem;
-width: 15rem;
-border: double 26px rgb(241, 239, 239);
-background-color: rgb(97, 20, 20);
-border-radius: 50%;
-color: black;
-font-size: 15rem;
-font-family: dgf;
-}
+.botonera button{height: 5rem;width: 5rem;border: double 10px rgb(241, 239, 239);background-color: rgb(97, 20, 20);border-radius: 50%;color: black;font-size: 5rem;font-family: dgf;}
 .personajeYboton{display: flex;flex-direction: row;}
