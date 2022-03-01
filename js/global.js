@@ -3,34 +3,38 @@
 class Personaje {
     constructor(nombre){
         if ( nombre == 'vegito'){
-            this.vida = 120;
-            this.ataque = 15;
+            this.vida = 100;
+            this.ataque = 25;
             this.defensa = 10;
-            this.imagen = './imagenes/seleccionpj/VegitoBlue.png'
+            this.imagen = './imagenes/seleccionpj/VegitoBlue.png';
         } else if (nombre == 'celula') {
-            this.vida = 110;
+            this.vida = 120;
             this.ataque = 15;
-            this.defensa = 10;
-            this.imagen = './imagenes/seleccionpj/cell.png'
+            this.defensa = 15;
+            this.imagen = './imagenes/seleccionpj/cell.png';
         } else if (nombre == 'gohan') {
-            this.vida = 120;
+            this.vida = 150;
             this.ataque = 15;
-            this.defensa = 10;
-            this.imagen = './imagenes/seleccionpj/gohan.png'
+            this.defensa = 14;
+            this.imagen = './imagenes/seleccionpj/gohan.png';
         } else if (nombre == 'zamasu'){
-            this.vida = 120;
-            this.ataque = 15;      
+            this.vida = 100;
+            this.ataque = 25;      
             this.defensa = 10;
-            this.imagen = './imagenes/seleccionpj/ZamasuRose.png'
+            this.imagen = './imagenes/seleccionpj/ZamasuRose.png';
         }
     this.nombre = nombre;
     }
-        
 }
 
 let jugador1;
 let jugador2;
 // ------------------------------------------------CAMBIAR PANTALLA ---------------------------------- 
+let personajeSeleccionado1 = document.querySelector('.personajeSeleccionado1')
+let personajeSeleccionado2 = document.querySelector('.personajeSeleccionado2')
+let vida1 = document.getElementById('vida1');
+let vida2 = document.getElementById('vida2');
+
 const cambio = (fondo1,fondo2) => {
     fondo1.style.display = 'none';
     fondo2.style.display = 'flex';
@@ -41,22 +45,38 @@ const cambiarPantalla = () => {
     let fondo2 = document.querySelector(".contenedor-batalla");
     let fondo3 = document.querySelector(".contenedor-ganador");
 
-    if (fondo1.style.display == 'flex') cambio(fondo1,fondo2);
-    if (fondo2.style.display == 'flex') cambio(fondo2,fondo3);
-}
+    if (fondo1.style.display == 'flex') {
+        cambio(fondo1,fondo2);
+        // personajeSeleccionado1.innerHTML = personaje.imagen
+        // personajeSeleccionado2.innerHTML = personaje.imagen
+        // vida1.innerHTML = personaje.vida
+        // vida2.innerHTML = personaje.vida
+        
 
+    } else if (fondo2.style.display == 'flex'){
+        // mostrar jugador GANADOR
+         cambio(fondo2,fondo3);
+    }
+}
+// ------------------------- ASIGNAR PERSONAJE -------------------------
 const asignarPersonaje = (jugador, personaje) => {
     jugador = new Personaje(personaje);
     return jugador
 }
+// let contenedorpj1 = document.getElementsByClassName(".personajeSeleccionado1")
+// let contenedorpj2 = document.getElementsByClassName(".personajeSeleccionado2")
 const seleccionPersonajes = (personaje) => {
 
     switch(personaje) {
         case 'celula':
             if (!jugador1) {
                 jugador1 = asignarPersonaje(jugador1, 'celula');
+                //contenedorpj1.style.background-image=url("../imagenes/personajes/celulaPelea.png")
+                console.log(jugador1)
             } else if (!jugador2) {
                 jugador2 = asignarPersonaje(jugador2, 'celula')
+                //contenedorpj2 .style.background-image = 'url("../imagenes/personajes/celulaPelea.png"')
+                console.log(jugador2)
                 cambiarPantalla();
             }
             break;
@@ -65,6 +85,7 @@ const seleccionPersonajes = (personaje) => {
                 jugador1 = asignarPersonaje(jugador1,'gohan');
             } else if (!jugador2) {
                 jugador2 = asignarPersonaje(jugador2, 'gohan')
+                console.log(jugador2)
                 cambiarPantalla();
             }
             break;
@@ -85,9 +106,14 @@ const seleccionPersonajes = (personaje) => {
             }
         break;
     }
-console.log(jugador1);
-console.log(jugador2);
 }
+
+// --------------------------------------------- COMBATE -----------------------------------
+ 
+const Atacar = (defensor, atacante,contadorVida) => {
+        contadorVida = defensor.personaje.vida - atacante.personaje.ataque1 + defensor.personaje.defensa;
+        return contadorVida = defensor.personaje.vida;
+ }
 
 // ----------------------- VOLVER A JUGAR --------------------
 const RepetirJuego = () => {
@@ -95,67 +121,5 @@ const RepetirJuego = () => {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // Atacar(defensor, atacante) {
-    //     let contadorVida;
-    //     contadorVida = defensor.personaje.vida - atacante.personaje.ataque1 + defensor.personaje.defensa;
-    //     return contadorVida = defensor.personaje.vida;
+   
     
-
-// ------------------- JUGADORES -----------------
-
-
-
-// const seleccionpersonaje = (personaje) => {
-
-//     switch (personaje) {
-
-//         case 'Vegito':
-//             if (jugador1) {
-//                 jugador1 = VegitoBlue;
-//             } else {
-//                 jugador2 = VegitoBlue;
-//                 Batalla();
-//             } 
-//         case 'Celula':
-//             if (jugador1) {
-//                 jugador1 = Celula;
-//             } else {
-//                 jugador2 = Celula;
-//                 Batalla();
-//             } 
-//         case 'Gohan':
-//             if (jugador1) {
-//                 jugador1 = Gohan;
-//             } else {
-//                 jugador2 = Gohan;
-//                 Batalla();
-//         case 'ZamasuRose':
-//             if (jugador1) {
-//                 jugador1 = ZamasuRose;
-//             } else {
-//                 jugador2 = ZamasuRose;
-//                 Batalla();
-//             }    
-//     }
-// }
-

@@ -10,7 +10,7 @@
     <title>Juego de Lucha</title>
 </head>
 <body>
-        <div class="contenedor-seleccion">
+        <div class="contenedor-seleccion" style="display: flex">
             <div class="jugador1 numeroJugador">
                 <img src="./imagenes/seleccionpj/player1.png" alt="player1">
             </div>
@@ -30,12 +30,12 @@
     
 <!--------------------------- PANTALLA DE BATALLA --------------->
 
-    <div class="contenedor-batalla">
+    <div class="contenedor-batalla" style="display: none">
         <div class="jugador1">
             <span id="vida-1">VIDA:</span>
             <img class="marcadorVida" src="./imagenes/batalla/vida1.png" alt="vida1">
             <div class="personajeYboton">
-                <img class="personajes" src="./imagenes/personajes/CS_CharacterImage_GBR.png" alt="personaje1">
+                <div class="personajeSeleccionado1" style=""></div>
                 <div class="botonera">
                     <div><button class="boton-A">A</button></div>
                     <div><button class="boton-B">B</button></div>
@@ -49,7 +49,7 @@
             <span id="vida-2">VIDA:</span>
             <img class="marcadorVida" src="./imagenes/batalla/vida2.png" alt="vida2">
             <div class="personajeYboton">
-                <img class="personajes" src="./imagenes/personajes/CS_CharacterImage_VTB.png" alt="personaje2">
+                <div class="personajeSeleccionado2"></div>
                 <div class="botonera">
                     <div><button class="boton-A">A</button></div>
                     <div><button class="boton-B">B</button></div>
@@ -61,7 +61,7 @@
     </div>
 
 <!------------------------PANTALLA GANADOR ---------------------->
-<div class="contenedor-ganador">
+<div class="contenedor-ganador" style="display: none">
     <div class="hasganado">
         <img src="./imagenes/titulos/TN_Winner.png" alt="hasganado">
     </div>
