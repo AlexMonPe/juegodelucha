@@ -32,8 +32,9 @@ let jugador2;
 // ------------------------------------------------CAMBIAR PANTALLA ---------------------------------- 
 let personajeSeleccionado1 = document.querySelector('.personajeSeleccionado1')
 let personajeSeleccionado2 = document.querySelector('.personajeSeleccionado2')
-let vida1 = document.getElementById('vida1');
-let vida2 = document.getElementById('vida2');
+let vida1 = document.getElementById('vida-1');
+let vida2 = document.getElementById('vida-2');
+
 
 const cambio = (fondo1,fondo2) => {
     fondo1.style.display = 'none';
@@ -49,8 +50,8 @@ const cambiarPantalla = () => {
         cambio(fondo1,fondo2);
         // personajeSeleccionado1.innerHTML = personaje.imagen
         // personajeSeleccionado2.innerHTML = personaje.imagen
-        // vida1.innerHTML = personaje.vida
-        // vida2.innerHTML = personaje.vida
+         vida1.innerHTML = jugador1.vida
+         vida2.innerHTML = jugador2.vida
         
 
     } else if (fondo2.style.display == 'flex'){
@@ -59,9 +60,9 @@ const cambiarPantalla = () => {
     }
 }
 // ------------------------- ASIGNAR PERSONAJE -------------------------
-const asignarPersonaje = (jugador, personaje) => {
-    jugador = new Personaje(personaje);
-    return jugador
+const asignarPersonaje = (personaje) => {
+    return new Personaje(personaje);
+   
 }
 // let contenedorpj1 = document.getElementsByClassName(".personajeSeleccionado1")
 // let contenedorpj2 = document.getElementsByClassName(".personajeSeleccionado2")
@@ -70,11 +71,11 @@ const seleccionPersonajes = (personaje) => {
     switch(personaje) {
         case 'celula':
             if (!jugador1) {
-                jugador1 = asignarPersonaje(jugador1, 'celula');
+                jugador1 = asignarPersonaje('celula');
                 //contenedorpj1.style.background-image=url("../imagenes/personajes/celulaPelea.png")
                 console.log(jugador1)
             } else if (!jugador2) {
-                jugador2 = asignarPersonaje(jugador2, 'celula')
+                jugador2 = asignarPersonaje('celula')
                 //contenedorpj2 .style.background-image = 'url("../imagenes/personajes/celulaPelea.png"')
                 console.log(jugador2)
                 cambiarPantalla();
@@ -82,26 +83,26 @@ const seleccionPersonajes = (personaje) => {
             break;
         case 'gohan':
             if (!jugador1) {
-                jugador1 = asignarPersonaje(jugador1,'gohan');
+                jugador1 = asignarPersonaje('gohan');
             } else if (!jugador2) {
-                jugador2 = asignarPersonaje(jugador2, 'gohan')
+                jugador2 = asignarPersonaje('gohan')
                 console.log(jugador2)
                 cambiarPantalla();
             }
             break;
         case 'zamasu':
             if (!jugador1) {
-                jugador1 = asignarPersonaje(jugador1,'zamasu');
+                jugador1 = asignarPersonaje('zamasu');
             } else if (!jugador2) {
-                jugador2 = asignarPersonaje(jugador2, 'zamasu')
+                jugador2 = asignarPersonaje('zamasu')
                 cambiarPantalla();
             }
             break;
         case 'vegito':
             if (!jugador1) {
-                jugador1 = asignarPersonaje(jugador1,'vegito');
+                jugador1 = asignarPersonaje('vegito');
             } else if (!jugador2) {
-                jugador2 = asignarPersonaje(jugador2, 'vegito')
+                jugador2 = asignarPersonaje('vegito')
                 cambiarPantalla();
             }
         break;
@@ -111,8 +112,8 @@ const seleccionPersonajes = (personaje) => {
 // --------------------------------------------- COMBATE -----------------------------------
  
 const Atacar = (defensor, atacante,contadorVida) => {
-        contadorVida = defensor.personaje.vida - atacante.personaje.ataque1 + defensor.personaje.defensa;
-        return contadorVida = defensor.personaje.vida;
+        contadorVida = defensor.vida - atacante.ataque1 + defensor.defensa;
+        return contadorVida = defensor.vida;
  }
 
 // ----------------------- VOLVER A JUGAR --------------------
