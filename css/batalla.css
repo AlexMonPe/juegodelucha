@@ -21,51 +21,72 @@ body {
     justify-content: space-evenly;
 }
 .marcadorVida {
-    height: 12rem;
-    width: 30rem;
+    height: 10rem;
+    width: 25rem;
+}
+.vida{
+    
 }
 /* MEDIDA IMAGEN PERSONAJE SELECCIONADO */
-.personajeSeleccionado1 { 
-     height: 44rem;
-     width: 18rem;
+#personajeSeleccionado1 {
+    height: 35em;
+    width: 18em;
 }
-.personajeSeleccionado2 { 
-    height: 44rem;
-    width: 18rem;
+
+#personajeSeleccionado2 {
+    height: 35em;
+    width: 18em;
 }
-.jugador1 { 
+.jugador1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    height: 100%;
 }
 .vs{
     display: flex;
     height: 100%;
-    width: 18rem;
+    width: 13rem;
     flex-direction: column;
     justify-content: center;
 }
 .jugador2 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: 100%;
     align-items: center;
 }
 span {
-    font-family: dgf;
-    font-size: 6rem;
-    color: #000000d9;
+    font-size: 3rem;
     position: absolute;
-    margin-top: 1em;
-    margin-right: 2em;
+    margin-top: 81px;
+    color: #8d0f0f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 .botonera {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    width: 11rem;
+    grid-template-rows: repeat(2,1fr);
+    width: 5rem;
     height: 7rem;
+    gap: 1em;
 }
 
-.botonera button{height: 5rem;width: 5rem;border: double 10px rgb(241, 239, 239);background-color: rgb(97, 20, 20);border-radius: 50%;color: black;font-size: 5rem;font-family: dgf;}
-.personajeYboton{display: flex;flex-direction: row;}
+.botonera button{height: 5rem;
+    width: 5rem;
+    border: double 10px rgb(241, 239, 239);
+    background-color: rgb(97, 20, 20);
+    border-radius: 50%;
+    color: black;
+    font-size: 5rem;
+    font-family: dgf;
+}
+.personajeYboton1{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 2em;
+}
+.personajeYboton2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+}
