@@ -8,7 +8,7 @@ body{
 }
 .fondo-inicio{
     background-image: url(../imagenes/titulos/fondohome.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 100vh;
     display: flex;

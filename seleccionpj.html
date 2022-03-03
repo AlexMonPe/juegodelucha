@@ -10,7 +10,7 @@
     <title>Juego de Lucha</title>
 </head>
 <body>
-        <div class="contenedor-seleccion" style="display: none">
+        <div class="contenedor-seleccion" style="display: flex">
             <div class="jugador1 numeroJugador">
                 <img src="./imagenes/seleccionpj/player1.png" alt="player1">
                 <div id="bannerSeleccionado1"></div>
@@ -40,12 +40,12 @@
                 <div id="personajeSeleccionado1"></div>
                 <div class="botonera">
                     <div><button onclick="combate('jugador1')" class="boton-A">A</button></div>
-                    <div><button onclick="combate('jugador1')" class="boton-B">B</button></div>
+                    <div><button onclick="combatEsp('jugador1')" class="boton-B">B</button></div>
                 </div>
             </div>
         </div>
         <div class="vs">
-            <img src="./imagenes/titulos/vs_object_05.png" alt="">
+            <img src="./imagenes/titulos/vs_object_05.png" alt="VS">
         </div>
         <div class="jugador2">
             <span id="vida-2"></span>
@@ -54,7 +54,7 @@
                 <div id="personajeSeleccionado2"></div>
                 <div class="botonera">
                     <div><button onclick="combate('jugador2')" class=" boton-A">A</button></div>
-                    <div><button onclick="combate('jugador2')" class=" boton-B">B</button></div>
+                    <div><button onclick="combatEsp('jugador2')" class=" boton-B">B</button></div>
                 </div>
             </div>
             
@@ -63,13 +63,15 @@
     </div>
 
 <!------------------------PANTALLA GANADOR ---------------------->
-<div class="contenedor-ganador" style="display: flex">
+<div class="contenedor-ganador" style="display: none">
     <div class="hasganado">
         <img src="./imagenes/titulos/TN_Winner.png" alt="hasganado">
     </div>
     <div class="jugador-ganador">
         <div class="personaje-ganador"></div>
-        <div class="repetirJuego"></div>
+        <div class="repetirJuego">
+            <button><a href="./seleccionpj.html">VOLVER A JUGAR</a></button>
+        </div>
     </div>
 </div>
 

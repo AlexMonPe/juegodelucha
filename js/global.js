@@ -5,18 +5,22 @@ class Personaje {
         if ( nombre == 'vegito'){
             this.vida = 100;
             this.ataque1 = 35;
+            this.ataque2 = 40;
             this.defensa = 10;
         } else if (nombre == 'celula') {
             this.vida = 120;
             this.ataque1 = 25;
+            this.ataque2 = 30;
             this.defensa = 15;
         } else if (nombre == 'gohan') {
             this.vida = 150;
             this.ataque1 = 20;
+            this.ataque2 = 35;
             this.defensa = 14;
         } else if (nombre == 'zamasu'){
             this.vida = 100;
-            this.ataque1 = 35;      
+            this.ataque1 = 35;   
+            this.ataque2 = 40;   
             this.defensa = 10;
         }
     this.nombre = nombre;
@@ -72,7 +76,7 @@ const seleccionPersonajes = (personaje) => {
                 contenedorpj1.style.backgroundImage = 'url("../imagenes/personajes/celulaPelea.png")'
                 contenedorpj1.style.backgroundSize = 'contain'
                 contenedorpj1.style.backgroundRepeat = 'no-repeat'
-                bannerSeleccionado1.style.backgroundImage = 'url("../imagenes/personajes/celulaPelea.png")'
+                bannerSeleccionado1.style.backgroundImage = 'url("../imagenes/personajes/caraCelula.png")'
                 bannerSeleccionado1.style.backgroundSize = 'contain'
                 bannerSeleccionado1.style.backgroundRepeat = 'no-repeat'
                 console.log(jugador1)
@@ -81,7 +85,7 @@ const seleccionPersonajes = (personaje) => {
                 contenedorpj2 .style.backgroundImage = 'url("../imagenes/personajes/celulaPelea.png")'
                 contenedorpj2.style.backgroundSize = 'contain'
                 contenedorpj2.style.backgroundRepeat = 'no-repeat'
-                bannerSeleccionado2.style.backgroundImage = 'url("../imagenes/personajes/celulaPelea.png")'
+                bannerSeleccionado2.style.backgroundImage = 'url("../imagenes/personajes/caraCelula.png")'
                 bannerSeleccionado2.style.backgroundSize = 'contain'
                 bannerSeleccionado2.style.backgroundRepeat = 'no-repeat'
                 //console.log(jugador2)
@@ -94,7 +98,7 @@ const seleccionPersonajes = (personaje) => {
                 contenedorpj1.style.backgroundImage = 'url("../imagenes/personajes/gohanPelea.png")'
                 contenedorpj1.style.backgroundSize = 'contain'
                 contenedorpj1.style.backgroundRepeat = 'no-repeat'
-                bannerSeleccionado1.style.backgroundImage = 'url("../imagenes/personajes/gohanPelea.png")'
+                bannerSeleccionado1.style.backgroundImage = 'url("../imagenes/personajes/caraGohan.png")'
                 bannerSeleccionado1.style.backgroundSize = 'contain'
                 bannerSeleccionado1.style.backgroundRepeat = 'no-repeat'
             } else if (!jugador2) {
@@ -102,7 +106,7 @@ const seleccionPersonajes = (personaje) => {
                 contenedorpj2.style.backgroundImage = 'url("../imagenes/personajes/gohanPelea.png")'
                 contenedorpj2.style.backgroundSize = 'contain'
                 contenedorpj2.style.backgroundRepeat = 'no-repeat'
-                bannerSeleccionado2.style.backgroundImage = 'url("../imagenes/personajes/gohanPelea.png")'
+                bannerSeleccionado2.style.backgroundImage = 'url("../imagenes/personajes/caraGohan.png")'
                 bannerSeleccionado2.style.backgroundSize = 'contain'
                 bannerSeleccionado2.style.backgroundRepeat = 'no-repeat'
                 console.log(jugador2)
@@ -115,7 +119,7 @@ const seleccionPersonajes = (personaje) => {
                 contenedorpj1.style.backgroundImage = 'url("../imagenes/personajes/zamasuPelea.png")'
                 contenedorpj1.style.backgroundSize = 'contain'
                 contenedorpj1.style.backgroundRepeat = 'no-repeat'
-                bannerSeleccionado1.style.backgroundImage = 'url("../imagenes/personajes/zamasuPelea.png")'
+                bannerSeleccionado1.style.backgroundImage = 'url("../imagenes/personajes/caraZamasu.png")'
                 bannerSeleccionado1.style.backgroundSize = 'contain'
                 bannerSeleccionado1.style.backgroundRepeat = 'no-repeat'
             } else if (!jugador2) {
@@ -123,7 +127,7 @@ const seleccionPersonajes = (personaje) => {
                 contenedorpj2.style.backgroundImage = 'url("../imagenes/personajes/zamasuPelea.png")'
                 contenedorpj2.style.backgroundSize = 'contain'
                 contenedorpj2.style.backgroundRepeat = 'no-repeat'
-                bannerSeleccionado2.style.backgroundImage = 'url("../imagenes/personajes/zamasuPelea.png")'
+                bannerSeleccionado2.style.backgroundImage = 'url("../imagenes/personajes/caraZamasu.png")'
                 bannerSeleccionado2.style.backgroundSize = 'contain'
                 bannerSeleccionado2.style.backgroundRepeat = 'no-repeat'
                 bannerSeleccionado2.style.backgroundRepeat = 'no-repeat'
@@ -136,7 +140,7 @@ const seleccionPersonajes = (personaje) => {
                 contenedorpj1.style.backgroundImage = 'url("../imagenes/personajes/vegitoPelea.png")'
                 contenedorpj1.style.backgroundSize = 'contain'
                 contenedorpj1.style.backgroundRepeat = 'no-repeat'
-                bannerSeleccionado1.style.backgroundImage = 'url("../imagenes/personajes/vegitoPelea.png")'
+                bannerSeleccionado1.style.backgroundImage = 'url("../imagenes/personajes/caraVegito.png")'
                 bannerSeleccionado1.style.backgroundSize = 'contain'
                 bannerSeleccionado1.style.backgroundRepeat = 'no-repeat'
             } else if (!jugador2) {
@@ -144,7 +148,7 @@ const seleccionPersonajes = (personaje) => {
                 contenedorpj2.style.backgroundImage = 'url("../imagenes/personajes/vegitoPelea.png")'
                 contenedorpj2.style.backgroundSize = 'contain'
                 contenedorpj2.style.backgroundRepeat = 'no-repeat'
-                bannerSeleccionado2.style.backgroundImage = 'url("../imagenes/personajes/vegitoPelea.png")'
+                bannerSeleccionado2.style.backgroundImage = 'url("../imagenes/personajes/caraVegito.png")'
                 bannerSeleccionado2.style.backgroundSize = 'contain'
                 bannerSeleccionado2.style.backgroundRepeat = 'no-repeat'
                 setTimeout(cambiarPantalla, 2000);
@@ -156,6 +160,18 @@ const seleccionPersonajes = (personaje) => {
 // --------------------------------------------- COMBATE -----------------------------------
 let vida1 = document.getElementById('vida-1');
 let vida2 = document.getElementById('vida-2');
+let pjganador = document.querySelector(".personaje-ganador")
+
+const ganador = () =>{
+    if (jugador2.vida == 0){
+        pjganador.style.backgroundImage = 'url("./imagenes/seleccionpj/player1.png")'
+        pjganador.style.backgroundSize = 'cover'
+    } else {
+        pjganador.style.backgroundImage = 'url("./imagenes/seleccionpj/player2.png")'
+        pjganador.style.backgroundSize = 'contain'
+        pjganador.style.backgroundRepeat = 'no-repeat'
+    }
+}
 
 const atacar = (atacante, defensor) => {
     let vidaRestante;
@@ -163,11 +179,24 @@ const atacar = (atacante, defensor) => {
         vidaRestante = defensor.vida - atacante.ataque1 + defensor.defensa;
         defensor.vida = vidaRestante
         console.log(defensor.vida)
-        
     if (defensor.vida <= 0) {
+        ganador();
         cambiarPantalla();
     }
  }
+
+ const atacarEsp = (atacante, defensor) => {
+    let vidaRestante;
+
+        vidaRestante = defensor.vida - atacante.ataque2 + defensor.defensa;
+        defensor.vida = vidaRestante
+        console.log(defensor.vida)
+    if (defensor.vida <= 0) {
+        ganador();
+        cambiarPantalla();
+    }
+ }
+
  const combate = (jugador) => {    
     if (jugador == 'jugador1'){
         atacar(jugador1,jugador2);
@@ -177,11 +206,20 @@ const atacar = (atacante, defensor) => {
     vida1.innerHTML = jugador1.vida
     vida2.innerHTML = jugador2.vida
  }
+ const combatEsp = (jugador) => {    
+    if (jugador == 'jugador1'){
+        atacarEsp(jugador1,jugador2);
+    } else {
+        atacarEsp(jugador2,jugador1);
+    }
+    vida1.innerHTML = jugador1.vida
+    vida2.innerHTML = jugador2.vida
+ }
 
 // ----------------------- VOLVER A JUGAR --------------------
-const RepetirJuego = () => {
-    if (fondo3.style.display == 'flex') return cambiarPantalla(fondo3,fondo1);
-}
+// const RepetirJuego = () => {
+//     if (fondo3.style.display == 'flex') return cambiarPantalla(fondo3,fondo1);
+// }
 
 
    
