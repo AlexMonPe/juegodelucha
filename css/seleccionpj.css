@@ -13,16 +13,14 @@ body{
     width: 100vw;
 }
 #bannerSeleccionado1{
-    background-color: red;
     height: 32em;
     width: 11em;
-    margin: 1em;
+    margin: 9em 1em;
 }
 #bannerSeleccionado2{
-    background-color: red;
     height: 32em;
     width: 14em;
-    margin: 1em;
+    margin: 9em 1em;
 }
 .selPj {
     width: 37rem;
@@ -33,9 +31,6 @@ body{
     height: 100%;
     align-items: center;
     justify-content: center;
-}
-.seleccionpj button{
-    
 }
 .bannerPj {
     height: 7rem;

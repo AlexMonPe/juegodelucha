@@ -45,7 +45,8 @@ const cambiarPantalla = () => {
 
     if (fondo1.style.display == 'flex') {
         cambio(fondo1,fondo2);
-        
+        vida1.innerHTML = jugador1.vida
+        vida2.innerHTML = jugador2.vida
          //console.log(jugador1.vida)
     } else if (fondo2.style.display == 'flex'){
         // mostrar jugador GANADOR
@@ -157,21 +158,17 @@ let vida1 = document.getElementById('vida-1');
 let vida2 = document.getElementById('vida-2');
 
 const atacar = (atacante, defensor) => {
-    
     let vidaRestante;
-    if (defensor.vida <= 0) {
-        cambiarPantalla();
-    }else {
+
         vidaRestante = defensor.vida - atacante.ataque1 + defensor.defensa;
         defensor.vida = vidaRestante
         console.log(defensor.vida)
+        
+    if (defensor.vida <= 0) {
+        cambiarPantalla();
     }
-    
-    
  }
  const combate = (jugador) => {    
-    
-    
     if (jugador == 'jugador1'){
         atacar(jugador1,jugador2);
     } else {

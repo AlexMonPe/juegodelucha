@@ -1,6 +1,7 @@
 .contenedor-ganador{
     display: none;
-    background-image: url(../imagenes/seleccionpj/fondoGanador.jpg);
+    flex-direction: column;
+    background-image: url(../imagenes/seleccionpj/winner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -8,6 +9,35 @@
 
 }
 
-.hasganado{
-width: 18em;
+.hasganado{display: flex;
+    width: 100vw;
+    height: 20em;
+    left: 0;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.hasganado img {
+    height: 10em;
+    width: 37em;
+    margin-right: 5em;
+}
+.jugador-ganador{
+    display: flex;
+    height: 35em;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 2em;
+}
+.personaje-ganador{
+background: red;
+height: 33em;
+width: 23em;
+}
+.repetirJuego{
+background: black;
+height: 10em;
+width: 34em;
 }

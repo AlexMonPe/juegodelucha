@@ -10,7 +10,7 @@
     <title>Juego de Lucha</title>
 </head>
 <body>
-        <div class="contenedor-seleccion" style="display: flex">
+        <div class="contenedor-seleccion" style="display: none">
             <div class="jugador1 numeroJugador">
                 <img src="./imagenes/seleccionpj/player1.png" alt="player1">
                 <div id="bannerSeleccionado1"></div>
@@ -63,9 +63,13 @@
     </div>
 
 <!------------------------PANTALLA GANADOR ---------------------->
-<div class="contenedor-ganador" style="display: none">
+<div class="contenedor-ganador" style="display: flex">
     <div class="hasganado">
         <img src="./imagenes/titulos/TN_Winner.png" alt="hasganado">
+    </div>
+    <div class="jugador-ganador">
+        <div class="personaje-ganador"></div>
+        <div class="repetirJuego"></div>
     </div>
 </div>
 
