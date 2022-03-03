@@ -1,6 +1,6 @@
 @font-face {
     font-family: DGF;
-    src: url(./Fuentes/DragonBallFighterz-Regular.ttf);
+    src: url(../Fuentes/DragonBallFighterz-Regular.ttf);
 }
 body {
      margin: 0px;
@@ -10,7 +10,7 @@ body {
   
 }
 .contenedor-batalla {
-    background-image: url("./imagenes/seleccionpj/fondobatalla.jpg");
+    background-image: url("../imagenes/seleccionpj/fondobatalla.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;

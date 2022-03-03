@@ -1,13 +1,13 @@
 @font-face {
     font-family: DGF;
-    src: url(./Fuentes/DragonBallFighterz-Regular.ttf);
+    src: url(../Fuentes/DragonBallFighterz-Regular.ttf);
 }
 body{
     margin: 0;
     padding: 0;
 }
 .fondo-inicio{
-    background-image: url(./imagenes/titulos/fondohome.jpg);
+    background-image: url(../imagenes/titulos/fondohome.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 100vh;
@@ -21,7 +21,7 @@ body{
     display: flex;
     height: 10em;
     width: 56em;
-    background-image: url(./imagenes/titulos/TITLE_GKS.png);
+    background-image: url(../imagenes/titulos/TITLE_GKS.png);
     background-size: cover;
     color: black;
     z-index: 1;
