@@ -170,14 +170,15 @@ const atacar = (atacante, defensor) => {
     
  }
  const combate = (jugador) => {    
-    vida1.innerHTML = jugador1.vida
-    vida2.innerHTML = jugador2.vida
+    
     
     if (jugador == 'jugador1'){
         atacar(jugador1,jugador2);
     } else {
         atacar(jugador2,jugador1);
     }
+    vida1.innerHTML = jugador1.vida
+    vida2.innerHTML = jugador2.vida
  }
 
 // ----------------------- VOLVER A JUGAR --------------------
