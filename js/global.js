@@ -163,7 +163,7 @@ let vida2 = document.getElementById('vida-2');
 let pjganador = document.querySelector(".personaje-ganador")
 
 const ganador = () =>{
-    if (jugador2.vida == 0){
+    if (jugador1.vida == 0){
         pjganador.style.backgroundImage = 'url("./imagenes/seleccionpj/player1.png")'
         pjganador.style.backgroundSize = 'cover'
     } else {
