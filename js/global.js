@@ -74,7 +74,6 @@ const seleccionPersonajes = (personaje) => {
                 bannerSeleccionado1.style.backgroundImage = 'url("../imagenes/personajes/celulaPelea.png")'
                 bannerSeleccionado1.style.backgroundSize = 'contain'
                 bannerSeleccionado1.style.backgroundRepeat = 'no-repeat'
-                
                 console.log(jugador1)
             } else if (!jugador2) {
                 jugador2 = asignarPersonaje('celula')
@@ -85,7 +84,7 @@ const seleccionPersonajes = (personaje) => {
                 bannerSeleccionado2.style.backgroundSize = 'contain'
                 bannerSeleccionado2.style.backgroundRepeat = 'no-repeat'
                 //console.log(jugador2)
-                setTimeout(cambiarPantalla(), 2000);
+                setTimeout(cambiarPantalla, 2000);
             }
             break;
         case 'gohan':
@@ -106,7 +105,7 @@ const seleccionPersonajes = (personaje) => {
                 bannerSeleccionado2.style.backgroundSize = 'contain'
                 bannerSeleccionado2.style.backgroundRepeat = 'no-repeat'
                 console.log(jugador2)
-                setTimeout(cambiarPantalla(), 2000);
+                setTimeout(cambiarPantalla, 2000);
             }
             break;
         case 'zamasu':
@@ -127,7 +126,7 @@ const seleccionPersonajes = (personaje) => {
                 bannerSeleccionado2.style.backgroundSize = 'contain'
                 bannerSeleccionado2.style.backgroundRepeat = 'no-repeat'
                 bannerSeleccionado2.style.backgroundRepeat = 'no-repeat'
-                setTimeout(cambiarPantalla(), 2000);
+                setTimeout(cambiarPantalla, 2000);
             }
             break;
         case 'vegito':
@@ -147,7 +146,7 @@ const seleccionPersonajes = (personaje) => {
                 bannerSeleccionado2.style.backgroundImage = 'url("../imagenes/personajes/vegitoPelea.png")'
                 bannerSeleccionado2.style.backgroundSize = 'contain'
                 bannerSeleccionado2.style.backgroundRepeat = 'no-repeat'
-                setTimeout(cambiarPantalla(), 2000);
+                setTimeout(cambiarPantalla, 2000);
             }
         break;
     }
@@ -166,7 +165,6 @@ const atacar = (atacante, defensor) => {
         vidaRestante = defensor.vida - atacante.ataque1 + defensor.defensa;
         defensor.vida = vidaRestante
         console.log(defensor.vida)
-
     }
     
     
