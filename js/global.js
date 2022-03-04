@@ -163,11 +163,11 @@ let vida2 = document.getElementById('vida-2');
 let pjganador = document.querySelector(".personaje-ganador")
 
 const ganador = () =>{
-    if (jugador1.vida == 0){
-        pjganador.style.backgroundImage = 'url("./imagenes/seleccionpj/player1.png")'
+    if (jugador1.vida <= 0){
+        pjganador.style.backgroundImage = 'url("./imagenes/seleccionpj/player2.png")'
         pjganador.style.backgroundSize = 'cover'
     } else {
-        pjganador.style.backgroundImage = 'url("./imagenes/seleccionpj/player2.png")'
+        pjganador.style.backgroundImage = 'url("./imagenes/seleccionpj/player1.png")'
         pjganador.style.backgroundSize = 'contain'
         pjganador.style.backgroundRepeat = 'no-repeat'
     }
@@ -180,7 +180,7 @@ const atacar = (atacante, defensor) => {
         defensor.vida = vidaRestante
         console.log(defensor.vida)
     if (defensor.vida <= 0) {
-        ganador();
+        ganador(atacante);
         cambiarPantalla();
     }
  }
