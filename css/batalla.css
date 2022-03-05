@@ -6,9 +6,8 @@ body {
      margin: 0px;
       padding: 0px;
      }
-.fondo { 
-  
-}
+/*------------------------ PANTALLA DE BATALLA -------------------------------*/
+
 .contenedor-batalla {
     background-image: url("../imagenes/seleccionpj/fondobatalla.jpg");
     background-size: cover;
@@ -24,15 +23,12 @@ body {
     height: 10rem;
     width: 25rem;
 }
-.vida{
-    
-}
-/* MEDIDA IMAGEN PERSONAJE SELECCIONADO */
+/* ---------------------CONTENEDOR DE PERSONAJE SELECCIONADO---------------- */
+
 #personajeSeleccionado1 {
     height: 35em;
     width: 18em;
 }
-
 #personajeSeleccionado2 {
     height: 35em;
     width: 18em;
@@ -43,7 +39,7 @@ body {
     align-items: center;
     height: 100%;
 }
-.vs{
+.vs {
     display: flex;
     height: 100%;
     width: 13rem;
@@ -63,6 +59,7 @@ span {
     color: #8d0f0f;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
+/* ---------------------- BOTONES DE ATAQUE ------------------------- */
 .botonera {
     display: grid;
     grid-template-rows: repeat(2,1fr);
@@ -70,7 +67,6 @@ span {
     height: 7rem;
     gap: 1em;
 }
-
 .botonera button{height: 5rem;
     width: 5rem;
     border: double 10px rgb(241, 239, 239);

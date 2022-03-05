@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
 }
-
+/* -------------------------- PANTALLA DE SELECCION DE PERSONAJE --------------------- */
 .contenedor-seleccion {
     display: flex;
     justify-content: space-between;
@@ -12,6 +12,7 @@ body{
     height: 100vh;
     width: 100vw;
 }
+/* ---------------------- BANNER SELECCIONADO ------------------------ */
 #bannerSeleccionado1{
     height: 32em;
     width: 11em;
@@ -37,8 +38,6 @@ body{
     width: 40rem;
     margin: 26px 0px;
 }
-
-.numeroJugador img{
-
-width: 9em;
+.numeroJugador img {
+    width: 9em;
 }

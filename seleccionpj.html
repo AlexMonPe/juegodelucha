@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/seleccionpj.css">
-    <link rel="stylesheet" href="./css/batalla.css">
-    <link rel="stylesheet" href="./css/ganador.css">
-    <title>Juego de Lucha</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/seleccionPj.css">
+        <link rel="stylesheet" href="./css/batalla.css">
+        <link rel="stylesheet" href="./css/ganador.css">
+        <title>Juego de Lucha</title>
+    </head>
+    <body>
+        <!---------------------------------- PANTALLA SELECCION PERSONAJE ---------------------------->
         <div class="contenedor-seleccion" style="display: flex">
             <div class="jugador1 numeroJugador">
                 <img src="./imagenes/seleccionpj/player1.png" alt="player1">
@@ -29,52 +30,49 @@
                 <div id="bannerSeleccionado2"></div>
             </div>
         </div>        
-    
-<!--------------------------- PANTALLA DE BATALLA --------------->
+        
+    <!--------------------------- PANTALLA DE BATALLA ------------------------------>
 
-    <div class="contenedor-batalla" style="display: none">
-        <div class="jugador1">
-            <span id="vida-1"></span>
-            <img class="marcadorVida" src="./imagenes/batalla/vida1.png" alt="vida1">
-            <div class="personajeYboton1">
-                <div id="personajeSeleccionado1"></div>
-                <div class="botonera">
-                    <div><button onclick="combate('jugador1')" class="boton-A">A</button></div>
-                    <div><button onclick="combatEsp('jugador1')" class="boton-B">B</button></div>
+        <div class="contenedor-batalla" style="display: none">
+            <div class="jugador1">
+                <span id="vida-1"></span>
+                <img class="marcadorVida" src="./imagenes/batalla/vida1.png" alt="vida1">
+                <div class="personajeYboton1">
+                    <div id="personajeSeleccionado1"></div>
+                    <div class="botonera">
+                        <div><button onclick="combate('jugador1')" class="boton-A">A</button></div>
+                        <div><button onclick="combatEsp('jugador1')" class="boton-B">B</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="vs">
+                <img src="./imagenes/titulos/vs_object_05.png" alt="VS">
+            </div>
+            <div class="jugador2">
+                <span id="vida-2"></span>
+                <img class="marcadorVida" src="./imagenes/batalla/vida2.png" alt="vida2">
+                <div class="personajeYboton2">
+                    <div id="personajeSeleccionado2"></div>
+                    <div class="botonera">
+                        <div><button onclick="combate('jugador2')" class=" boton-A">A</button></div>
+                        <div><button onclick="combatEsp('jugador2')" class=" boton-B">B</button></div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="vs">
-            <img src="./imagenes/titulos/vs_object_05.png" alt="VS">
-        </div>
-        <div class="jugador2">
-            <span id="vida-2"></span>
-            <img class="marcadorVida" src="./imagenes/batalla/vida2.png" alt="vida2">
-            <div class="personajeYboton2">
-                <div id="personajeSeleccionado2"></div>
-                <div class="botonera">
-                    <div><button onclick="combate('jugador2')" class=" boton-A">A</button></div>
-                    <div><button onclick="combatEsp('jugador2')" class=" boton-B">B</button></div>
+
+    <!------------------------PANTALLA GANADOR ---------------------->
+        <div class="contenedor-ganador" style="display: none">
+            <div class="hasganado">
+                <img src="./imagenes/titulos/TN_Winner.png" alt="hasganado">
+            </div>
+            <div class="jugador-ganador">
+                <div class="personaje-ganador"></div>
+                <div class="repetirJuego">
+                    <button><a href="./seleccionpj.html">VOLVER A JUGAR</a></button>
                 </div>
             </div>
-            
-           
         </div>
-    </div>
-
-<!------------------------PANTALLA GANADOR ---------------------->
-<div class="contenedor-ganador" style="display: none">
-    <div class="hasganado">
-        <img src="./imagenes/titulos/TN_Winner.png" alt="hasganado">
-    </div>
-    <div class="jugador-ganador">
-        <div class="personaje-ganador"></div>
-        <div class="repetirJuego">
-            <button><a href="./seleccionpj.html">VOLVER A JUGAR</a></button>
-        </div>
-    </div>
-</div>
-
-<script src="./js/global.js"></script>
-</body>
+        <script src="./js/global.js"></script>
+    </body>
 </html>
