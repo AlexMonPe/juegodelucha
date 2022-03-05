@@ -175,7 +175,6 @@ const atacar = (atacante, defensor) => {
         cambiarPantalla();
     }
 }
-
 const atacarEsp = (atacante, defensor) => {
     let vidaRestante;
         vidaRestante = defensor.vida - atacante.ataque2 + defensor.defensa;
