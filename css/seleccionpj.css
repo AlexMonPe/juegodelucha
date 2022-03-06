@@ -34,9 +34,12 @@ body{
     justify-content: center;
 }
 .bannerPj {
+    cursor: pointer;
     height: 7rem;
     width: 40rem;
     margin: 26px 0px;
+    border-radius: 32px 32px 0px 0px;
+    box-shadow: -1px 6px 26px 6px yellow;
 }
 .numeroJugador img {
     width: 9em;

@@ -205,7 +205,7 @@ const combatEsp = (jugador) => {
     vida1.innerHTML = jugador1.vida
     vida2.innerHTML = jugador2.vida
 }
-
+// FUNCION PARA PARAR EL AUDIO HACIENDO CLICK EN CUALQUIER SITIO DEL VIDEO
 
 const pausarAudio = () => {
     audio.pause();

@@ -68,10 +68,11 @@ span {
     gap: 1em;
 }
 .botonera button{
+    cursor: pointer;
     height: 5rem;
     width: 5rem;
     border: double 10px rgb(241, 239, 239);
-    background-color: rgb(97, 20, 20);
+    background-color: rgb(58, 19, 19);
     border-radius: 50%;
     color: black;
     font-size: 5rem;
@@ -92,8 +93,8 @@ span {
 }
 #video {
     position: absolute;
-    margin-left: 22em;
-    bottom: 13em;
+    margin-left: 57em;
+    bottom: 16em;
     height: 10em;
     width: 18em;
     border: 2px dashed #ffffff;
