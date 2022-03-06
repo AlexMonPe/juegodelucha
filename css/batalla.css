@@ -67,7 +67,8 @@ span {
     height: 7rem;
     gap: 1em;
 }
-.botonera button{height: 5rem;
+.botonera button{
+    height: 5rem;
     width: 5rem;
     border: double 10px rgb(241, 239, 239);
     background-color: rgb(97, 20, 20);
@@ -85,4 +86,17 @@ span {
     display: flex;
     flex-direction: row;
     margin-top: 2em;
+}
+#audio{
+    width: 13em;
+}
+#video {
+    position: absolute;
+    margin-left: 22em;
+    bottom: 13em;
+    height: 10em;
+    width: 18em;
+    border: 2px dashed #ffffff;
+    border-radius: 2em;
+    box-shadow: 1px -3px 22px 16px white;
 }

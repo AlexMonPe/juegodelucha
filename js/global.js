@@ -173,6 +173,7 @@ const atacar = (atacante, defensor) => {
     if (defensor.vida <= 0) {
         ganador(atacante);
         cambiarPantalla();
+        
     }
 }
 const atacarEsp = (atacante, defensor) => {
@@ -183,6 +184,7 @@ const atacarEsp = (atacante, defensor) => {
     if (defensor.vida <= 0) {
         ganador(atacante);
         cambiarPantalla();
+       
     }
 }
 const combate = (jugador) => {    
@@ -203,5 +205,8 @@ const combatEsp = (jugador) => {
     vida1.innerHTML = jugador1.vida
     vida2.innerHTML = jugador2.vida
 }
-   
-    
+
+
+const pausarAudio = () => {
+    audio.pause();
+}

@@ -10,7 +10,7 @@
         <title>Juego de Lucha</title>
     </head>
     <body>
-        <!---------------------------------- PANTALLA SELECCION PERSONAJE ---------------------------->
+    <!---------------------------------- PANTALLA SELECCION PERSONAJE ---------------------------->
         <div class="contenedor-seleccion" style="display: flex">
             <div class="jugador1 numeroJugador">
                 <img src="./imagenes/seleccionpj/player1.png" alt="player1">
@@ -47,6 +47,7 @@
             </div>
             <div class="vs">
                 <img src="./imagenes/titulos/vs_object_05.png" alt="VS">
+                <audio src="./audio/battleaudio.mp4" autoplay id="audio"></audio>
             </div>
             <div class="jugador2">
                 <span id="vida-2"></span>
@@ -61,13 +62,15 @@
             </div>
         </div>
 
-    <!------------------------PANTALLA GANADOR ---------------------->
+<!------------------------PANTALLA GANADOR ---------------------->
         <div class="contenedor-ganador" style="display: none">
             <div class="hasganado">
                 <img src="./imagenes/titulos/TN_Winner.png" alt="hasganado">
             </div>
             <div class="jugador-ganador">
-                <div class="personaje-ganador"></div>
+                <div class="personaje-ganador">
+                    <video src="./audio/videogohan.mp4" controls id="video" onclick="pausarAudio()"></video>
+                </div>
                 <div class="repetirJuego">
                     <button><a href="./seleccionpj.html">VOLVER A JUGAR</a></button>
                 </div>
