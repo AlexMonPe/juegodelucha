@@ -158,11 +158,11 @@ let pjganador = document.querySelector(".personaje-ganador")
 const ganador = () =>{
     if (jugador1.vida <= 0){
         pjganador.style.backgroundImage = 'url("./imagenes/seleccionpj/player2.png")'
-        pjganador.style.backgroundSize = 'cover'
-    } else {
-        pjganador.style.backgroundImage = 'url("./imagenes/seleccionpj/player1.png")'
         pjganador.style.backgroundSize = 'contain'
         pjganador.style.backgroundRepeat = 'no-repeat'
+    } else {
+        pjganador.style.backgroundImage = 'url("./imagenes/seleccionpj/player1.png")'
+        pjganador.style.backgroundSize = 'cover'
     }
 }
 const atacar = (atacante, defensor) => {
