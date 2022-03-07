@@ -26,10 +26,14 @@ body {
 /* ---------------------CONTENEDOR DE PERSONAJE SELECCIONADO---------------- */
 
 #personajeSeleccionado1 {
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 35em;
     width: 18em;
 }
 #personajeSeleccionado2 {
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 35em;
     width: 18em;
 }

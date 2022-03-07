@@ -68,20 +68,12 @@ const seleccionPersonajes = (personaje) => {
             if (!jugador1) {
                 jugador1 = asignarPersonaje('celula');
                 contenedorpj1.style.backgroundImage = 'url("./imagenes/personajes/celulaPelea.png")'
-                contenedorpj1.style.backgroundSize = 'contain'
-                contenedorpj1.style.backgroundRepeat = 'no-repeat'
                 bannerSeleccionado1.style.backgroundImage = 'url("./imagenes/personajes/caraCelula.png")'
-                bannerSeleccionado1.style.backgroundSize = 'contain'
-                bannerSeleccionado1.style.backgroundRepeat = 'no-repeat'
                 // console.log(jugador1)
             } else if (!jugador2) {
                 jugador2 = asignarPersonaje('celula')
                 contenedorpj2 .style.backgroundImage = 'url("./imagenes/personajes/celulaPelea.png")'
-                contenedorpj2.style.backgroundSize = 'contain'
-                contenedorpj2.style.backgroundRepeat = 'no-repeat'
                 bannerSeleccionado2.style.backgroundImage = 'url("./imagenes/personajes/caraCelula.png")'
-                bannerSeleccionado2.style.backgroundSize = 'contain'
-                bannerSeleccionado2.style.backgroundRepeat = 'no-repeat'
                 //console.log(jugador2)
                 setTimeout(cambiarPantalla, 2000);
             }
@@ -90,19 +82,11 @@ const seleccionPersonajes = (personaje) => {
             if (!jugador1) {
                 jugador1 = asignarPersonaje('gohan');
                 contenedorpj1.style.backgroundImage = 'url("./imagenes/personajes/gohanPelea.png")'
-                contenedorpj1.style.backgroundSize = 'contain'
-                contenedorpj1.style.backgroundRepeat = 'no-repeat'
                 bannerSeleccionado1.style.backgroundImage = 'url("./imagenes/personajes/caraGohan.png")'
-                bannerSeleccionado1.style.backgroundSize = 'contain'
-                bannerSeleccionado1.style.backgroundRepeat = 'no-repeat'
             } else if (!jugador2) {
                 jugador2 = asignarPersonaje('gohan')
                 contenedorpj2.style.backgroundImage = 'url("./imagenes/personajes/gohanPelea.png")'
-                contenedorpj2.style.backgroundSize = 'contain'
-                contenedorpj2.style.backgroundRepeat = 'no-repeat'
                 bannerSeleccionado2.style.backgroundImage = 'url("./imagenes/personajes/caraGohan.png")'
-                bannerSeleccionado2.style.backgroundSize = 'contain'
-                bannerSeleccionado2.style.backgroundRepeat = 'no-repeat'
                 console.log(jugador2)
                 setTimeout(cambiarPantalla, 2000);
             }
@@ -111,42 +95,26 @@ const seleccionPersonajes = (personaje) => {
             if (!jugador1) {
                 jugador1 = asignarPersonaje('zamasu');
                 contenedorpj1.style.backgroundImage = 'url("./imagenes/personajes/zamasuPelea.png")'
-                contenedorpj1.style.backgroundSize = 'contain'
-                contenedorpj1.style.backgroundRepeat = 'no-repeat'
                 bannerSeleccionado1.style.backgroundImage = 'url("./imagenes/personajes/caraZamasu.png")'
-                bannerSeleccionado1.style.backgroundSize = 'contain'
-                bannerSeleccionado1.style.backgroundRepeat = 'no-repeat'
             } else if (!jugador2) {
                 jugador2 = asignarPersonaje('zamasu')
                 contenedorpj2.style.backgroundImage = 'url("./imagenes/personajes/zamasuPelea.png")'
-                contenedorpj2.style.backgroundSize = 'contain'
-                contenedorpj2.style.backgroundRepeat = 'no-repeat'
                 bannerSeleccionado2.style.backgroundImage = 'url("./imagenes/personajes/caraZamasu.png")'
-                bannerSeleccionado2.style.backgroundSize = 'contain'
-                bannerSeleccionado2.style.backgroundRepeat = 'no-repeat'
                 setTimeout(cambiarPantalla, 2000);
             }
-            break;
+        break;
         case 'vegito':
             if (!jugador1) {
                 jugador1 = asignarPersonaje('vegito');
                 contenedorpj1.style.backgroundImage = 'url("./imagenes/personajes/vegitoPelea.png")'
-                contenedorpj1.style.backgroundSize = 'contain'
-                contenedorpj1.style.backgroundRepeat = 'no-repeat'
                 bannerSeleccionado1.style.backgroundImage = 'url("./imagenes/personajes/caraVegito.png")'
-                bannerSeleccionado1.style.backgroundSize = 'contain'
-                bannerSeleccionado1.style.backgroundRepeat = 'no-repeat'
             } else if (!jugador2) {
                 jugador2 = asignarPersonaje('vegito')
                 contenedorpj2.style.backgroundImage = 'url("./imagenes/personajes/vegitoPelea.png")'
-                contenedorpj2.style.backgroundSize = 'contain'
-                contenedorpj2.style.backgroundRepeat = 'no-repeat'
                 bannerSeleccionado2.style.backgroundImage = 'url("./imagenes/personajes/caraVegito.png")'
-                bannerSeleccionado2.style.backgroundSize = 'contain'
-                bannerSeleccionado2.style.backgroundRepeat = 'no-repeat'
                 setTimeout(cambiarPantalla, 2000);
             }
-        break;
+            break;
     }
 }
 
@@ -165,26 +133,19 @@ const ganador = () =>{
         pjganador.style.backgroundSize = 'cover'
     }
 }
-const atacar = (atacante, defensor) => {
+const atacar = (atacante, defensor, ataque) => {
     let vidaRestante;
+    if (ataque == 'ataque1'){
         vidaRestante = defensor.vida - atacante.ataque1 + defensor.defensa;
         defensor.vida = vidaRestante
-        console.log(defensor.vida)
-    if (defensor.vida <= 0) {
-        ganador(atacante);
-        cambiarPantalla();
-        
-    }
-}
-const atacarEsp = (atacante, defensor) => {
-    let vidaRestante;
+        //console.log(defensor.vida)
+    } else {
         vidaRestante = defensor.vida - atacante.ataque2 + defensor.defensa;
         defensor.vida = vidaRestante
-        console.log(defensor.vida)
-    if (defensor.vida <= 0) {
+    }
+    if (defensor.vida <= 0){
         ganador(atacante);
         cambiarPantalla();
-       
     }
 }
 const combate = (jugador) => {    
@@ -192,15 +153,6 @@ const combate = (jugador) => {
         atacar(jugador1,jugador2);
     } else {
         atacar(jugador2,jugador1);
-    }
-    vida1.innerHTML = jugador1.vida
-    vida2.innerHTML = jugador2.vida
-}
-const combatEsp = (jugador) => {    
-    if (jugador == 'jugador1'){
-        atacarEsp(jugador1,jugador2);
-    } else {
-        atacarEsp(jugador2,jugador1);
     }
     vida1.innerHTML = jugador1.vida
     vida2.innerHTML = jugador2.vida

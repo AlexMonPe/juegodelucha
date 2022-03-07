@@ -14,11 +14,15 @@ body{
 }
 /* ---------------------- BANNER SELECCIONADO ------------------------ */
 #bannerSeleccionado1{
+    background-size: contain;
+    background-repeat: no-repeat;                
     height: 32em;
     width: 11em;
     margin: 9em 1em;
 }
 #bannerSeleccionado2{
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 32em;
     width: 14em;
     margin: 9em 1em;
